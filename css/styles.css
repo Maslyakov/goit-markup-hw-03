@@ -1,0 +1,181 @@
+/* Variable colors */
+
+:root {
+    --primary: #4D5AE5; /* CTAs, focused, active states, links */
+    --dark: #2E2F42; /* overlays, shadows, headings */
+    --success: #31D0AA; /* valid fields, success messages */
+    --text: #434455; /* body text */
+    --subtle-text: #8E8F99; /*helper text, deemphasized text */
+    --accent: #E7E9FC; /* accent color, hairlines, subtle backgrounds */
+    --light: #F4F4FD; /* light mode backgrounds, light mode dialogs/alerts */
+    --white: #FFFFFF;
+  }
+
+/* General */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;  
+    color: var(--text);
+    background-color: var(--white);
+}
+
+.list {
+    list-style: none;
+}
+
+.underlineless {
+    text-decoration: none;
+}
+
+.visually-hidden { 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} 
+
+/* Logo */
+
+.logo {
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:  var(--primary);
+}
+
+.logo-dark {
+    color: var(--dark);
+}
+
+.logo-light {
+    color: var(--light);
+}
+
+/* Site nav */
+
+.site-nav {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.site-nav .link {
+    color:  var(--dark);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--text);
+}
+
+.site-nav .link:active {
+    color: var(--primary);
+}
+
+.site-nav .current {
+    color: var(--primary);
+}
+
+/* Contacts */
+
+.contact .link {
+    color: var(--dark);
+}
+
+.contact .link:hover, 
+.contact .link:focus {
+    color: var(--primary);
+}
+
+/* Hero */
+
+.hero {
+    color: var(--white);
+    background-color: var(--dark);
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 500;  
+}
+
+/* Section */
+
+.section-title {
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--dark);
+}
+
+.section.light {
+    background-color: var(--light);
+}
+
+.benefits {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;  
+    color: var(--dark);   
+}
+
+.card-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--dark);  
+}
+
+.card-description {
+    color: var(--text);
+}
+
+/* Button */
+
+button {
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.5;
+    border: 0px;
+    cursor: pointer;
+}
+
+button.primary {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+button.primary:active {
+    background-color: #404BBF;
+}
+
+button.secondary {
+    color: var(--primary);
+    background-color: var(--accent);
+}
+
+button.secondary:hover,
+button.secondary:focus {
+    color: var(--white);
+    background-color: var(--primary);  
+}
+
+button.secondary:active {
+    color: var(--white);
+    background-color: #404BBF;
+}
+
+/* Footer */
+
+.footer {
+    color: var(--accent);
+    background-color: var(--dark);
+}
