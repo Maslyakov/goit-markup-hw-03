@@ -20,7 +20,14 @@ body {
     background-color: var(--white);
 }
 
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
 .list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -56,6 +63,14 @@ body {
 
 .logo-light {
     color: var(--light);
+}
+
+/* Container */
+
+.container {
+    width: 1128px;
+    margin: 0 auto;
+    padding: 0px 12px;
 }
 
 /* Site nav */
@@ -99,16 +114,24 @@ body {
 .hero {
     color: var(--white);
     background-color: var(--dark);
+    text-align: center;
 }
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 48px;
     font-size: 56px;
     font-weight: 500;  
 }
 
 /* Section */
 
+.section {
+    padding-top: 120px;
+}
+
 .section-title {
+    margin-bottom: 72px;
     font-size: 36px;
     font-weight: 500;
     text-transform: capitalize;
@@ -116,14 +139,20 @@ body {
 }
 
 .section.light {
+    padding-bottom: 120px;
     background-color: var(--light);
 }
 
 .benefits {
+    margin-top: 0;
     font-size: 24px;
     font-weight: 500;
     line-height: 1.2;  
     color: var(--dark);   
+}
+
+.benefits ~ p {
+    margin: 0;
 }
 
 .card-name {
@@ -133,6 +162,10 @@ body {
     color: var(--dark);  
 }
 
+.card-name ~ p {
+    margin: 0;
+}
+
 .card-description {
     color: var(--text);
 }
@@ -140,11 +173,13 @@ body {
 /* Button */
 
 button {
+    padding: 8px 16px;
     font-size: 16px;
     font-family: inherit;
     font-weight: 500;
     line-height: 1.5;
     border: 0px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -173,9 +208,29 @@ button.secondary:active {
     background-color: #404BBF;
 }
 
+/* Portfolio */
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.works {
+    padding-top: 72px;
+}
+
 /* Footer */
 
 .footer {
+    padding: 100px 0px;
     color: var(--accent);
     background-color: var(--dark);
+}
+
+.test1 {
+    background-color: teal;
+}
+
+.footer p {
+margin-bottom: 0;
 }
