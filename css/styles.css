@@ -27,6 +27,11 @@ h2 {
     text-align: center;
 }
 
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
 .list {
     margin: 0;
     padding: 0;
@@ -75,9 +80,14 @@ h2 {
 /* Container */
 
 .container {
-    width: 1152px;
+    width: 1158px;
     margin: 0 auto;
-    padding: 0px 12px;
+    padding: 0px 15px;
+}
+
+.shadow {
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /* Main nav */
@@ -153,6 +163,9 @@ align-items: center;
 /* Hero */
 
 .hero {
+    padding-top: 192px;
+    padding-bottom: 192px;
+
     color: var(--white);
     background-color: var(--dark);
     text-align: center;
@@ -170,6 +183,11 @@ align-items: center;
 
 .section {
     padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-adv {
+    padding-top: 120px;
 }
 
 .section-title {
@@ -182,8 +200,6 @@ align-items: center;
 }
 
 .section.light {
-    padding-bottom: 120px;
-
     background-color: var(--light);
 }
 
@@ -191,11 +207,16 @@ align-items: center;
 
 .advantage {
     margin-top: 0;
+    margin-bottom: 8px;
 
     font-size: 24px;
     font-weight: 500;
     line-height: 1.2;  
     color: var(--dark);   
+}
+
+.advantage ~ p {
+    line-height: 1.5;  
 }
 
 .advantage-list {
@@ -238,9 +259,14 @@ align-items: center;
     margin-right: 24px;    
 }
 
+.team-card {
+    background-color: var(--white);
+    text-align: center;
+}
+
 .team-name {
-    margin: 32px 16px 8px 16px;
-    text-align: center; 
+    padding-top: 32px;
+    padding-bottom: 8px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -248,9 +274,11 @@ align-items: center;
 }
 
 .team-item p {
-    margin-top: 8px;
-    margin-bottom: 32px;
-    text-align: center;
+    padding-bottom: 32px;
+}
+
+.team-img {
+    display: block;
 }
 
 /* Button */
@@ -309,7 +337,7 @@ button.secondary:active {
 }
 
 .works {
-    padding-top: 72px;
+    margin-top: 72px;
 }
 
 .list.works {
@@ -321,9 +349,6 @@ button.secondary:active {
     width: 360px;
     margin-right: 24px;
     margin-bottom: 48px;
-
-    border: 0.5px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .works-item:nth-child(3n) {
@@ -338,18 +363,25 @@ button.secondary:active {
     display: block;
 }
 
-.card-name {
-    margin: 32px 16px 8px 16px;
+.cards {
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: var(--white);
     text-align: left;
+}
+
+.card-name {
+    padding-top: 32px;
+    padding-bottom: 8px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    text-align: left;
     color: var(--dark); 
 }
 
 .card-description {
     padding-bottom: 32px;
-    padding-left: 16px;
     color: var(--text);
 }
 
